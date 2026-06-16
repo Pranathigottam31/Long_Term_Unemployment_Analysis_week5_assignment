@@ -37,7 +37,7 @@ ax1.plot(total_unemployed_time['Period'], total_unemployed_time['Unemployed'],
 ax1.set_title('Total Long Term Unemployment Over Time', fontsize=16)
 ax1.set_xlabel('Year', fontsize=14)
 ax1.set_ylabel('Number of Persons', fontsize=14)
-ax1.grid(True, linestyle='--', alpha=0.6)
+# ax1.grid(True, linestyle='--', alpha=0.6)
 
 # Format y axis to show plain numbers 
 ax1.yaxis.set_major_formatter(plt.FuncFormatter(lambda x, _: f'{int(x):,}'))
@@ -73,7 +73,7 @@ ax2.set_ylabel('Number of Persons', fontsize=14)
 ax2.set_xticks(x)
 ax2.set_xticklabels(short_labels)
 ax2.legend()
-ax2.grid(axis='y', linestyle='--', alpha=0.6)
+# ax2.grid(axis='y', linestyle='--', alpha=0.6)
 
 # Format y-axis
 ax2.yaxis.set_major_formatter(plt.FuncFormatter(lambda x, _: f'{int(x):,}'))
@@ -98,7 +98,7 @@ ax3.scatter(volatility_df['Unemployed'], volatility_df['MoM_Change'],
 ax3.set_title('Volatility in Long Term Unemployment', fontsize=16)
 ax3.set_xlabel('Total Unemployed (Persons)', fontsize=14)
 ax3.set_ylabel('Month over Month Change (Persons)', fontsize=14)
-ax3.grid(True, linestyle='--', alpha=0.6)
+# ax3.grid(True, linestyle='--', alpha=0.6)
 
 # Add a horizontal line at 0 for reference
 ax3.axhline(0, color='black', linewidth=1, linestyle='--')
